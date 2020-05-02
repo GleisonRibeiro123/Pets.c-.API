@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Pets.Core.Query.Contracts/1.0.0": {
+        "runtime": {
+          "Pets.Core.Query.Contracts.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Pets.Core.Query.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

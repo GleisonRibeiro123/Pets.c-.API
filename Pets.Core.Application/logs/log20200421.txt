@@ -1,0 +1,1002 @@
+2020-04-21 09:04:12.989 -03:00 [INF] Starting Amplifier web host
+2020-04-21 09:04:17.507 -03:00 [INF] User profile is available. Using 'C:\Users\gleison.ribeiro\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-04-21 09:04:29.441 -03:00 [INF] Request starting HTTP/1.1 HEAD https://localhost:5001/  
+2020-04-21 09:04:29.539 -03:00 [INF] Request finished in 100.0497ms 404 
+2020-04-21 09:04:30.489 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2020-04-21 09:04:30.491 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/robots.txt  
+2020-04-21 09:04:30.555 -03:00 [INF] Request finished in 63.498ms 307 
+2020-04-21 09:04:30.555 -03:00 [INF] Request finished in 65.9404ms 307 
+2020-04-21 09:04:30.590 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/robots.txt  
+2020-04-21 09:04:30.590 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/  
+2020-04-21 09:04:30.595 -03:00 [INF] Request finished in 4.7716ms 404 
+2020-04-21 09:04:30.595 -03:00 [INF] Request finished in 4.7716ms 404 
+2020-04-21 09:04:30.691 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/robots.txt  
+2020-04-21 09:04:30.696 -03:00 [INF] Request finished in 4.4723ms 404 
+2020-04-21 09:04:35.069 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger  
+2020-04-21 09:04:35.074 -03:00 [INF] Request finished in 4.6219ms 301 
+2020-04-21 09:04:35.079 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html  
+2020-04-21 09:04:35.118 -03:00 [INF] Request finished in 38.2156ms 200 text/html;charset=utf-8
+2020-04-21 09:04:35.139 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-04-21 09:04:35.141 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-04-21 09:04:35.141 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-04-21 09:04:35.212 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-04-21 09:04:35.212 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-04-21 09:04:35.222 -03:00 [INF] Request finished in 80.7698ms 200 application/javascript
+2020-04-21 09:04:35.222 -03:00 [INF] Request finished in 82.7817ms 200 text/css
+2020-04-21 09:04:35.244 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-04-21 09:04:35.246 -03:00 [INF] Request finished in 105.2616ms 200 application/javascript
+2020-04-21 09:04:35.425 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-04-21 09:04:35.451 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-32x32.png  
+2020-04-21 09:04:35.454 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2020-04-21 09:04:35.459 -03:00 [INF] Request finished in 7.5809ms 200 image/png
+2020-04-21 09:04:35.528 -03:00 [INF] Request finished in 103.2532ms 200 application/json;charset=utf-8
+2020-04-21 09:04:41.914 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Usuario/find  
+2020-04-21 09:04:41.923 -03:00 [INF] Executing endpoint 'Pets.Core.Application.Controllers.UsuarioController.FindAsync (Pets.Core.Application)'
+2020-04-21 09:04:41.996 -03:00 [INF] Route matched with {action = "Find", controller = "Usuario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FindAsync(Pets.Core.Query.Usuario.Requests.FindUsuarioRequest) on controller Pets.Core.Application.Controllers.UsuarioController (Pets.Core.Application).
+2020-04-21 09:04:42.915 -03:00 [INF] Entity Framework Core 3.1.3 initialized 'PetsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-04-21 09:04:44.207 -03:00 [INF] Executed DbCommand (451ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Nome], [u].[Email], [u].[Telefone], [u].[DataNascimento], [u].[Descricao], NULL AS [Imagem]
+FROM [Usuario] AS [u]
+2020-04-21 09:04:44.258 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Pets.Core.Query.Contracts.Usuario.Results.FindUsuarioResult, Pets.Core.Query.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-21 09:04:44.421 -03:00 [INF] Executed action Pets.Core.Application.Controllers.UsuarioController.FindAsync (Pets.Core.Application) in 2416.4176ms
+2020-04-21 09:04:44.424 -03:00 [INF] Executed endpoint 'Pets.Core.Application.Controllers.UsuarioController.FindAsync (Pets.Core.Application)'
+2020-04-21 09:04:44.429 -03:00 [INF] Request finished in 2515.6097ms 200 application/json; charset=utf-8
+2020-04-21 09:06:49.970 -03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Usuario application/json-patch+json 165
+2020-04-21 09:06:49.973 -03:00 [INF] Executing endpoint 'Pets.Core.Application.Controllers.UsuarioController.AdicionarUsuarioAsync (Pets.Core.Application)'
+2020-04-21 09:06:49.982 -03:00 [INF] Route matched with {action = "AdicionarUsuario", controller = "Usuario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdicionarUsuarioAsync(Pets.Core.Query.Usuario.Handlers.AdicionarUsuarioRequest) on controller Pets.Core.Application.Controllers.UsuarioController (Pets.Core.Application).
+2020-04-21 09:06:50.089 -03:00 [INF] Entity Framework Core 3.1.3 initialized 'PetsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-04-21 09:06:50.396 -03:00 [INF] Executed DbCommand (150ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 8000) (DbType = Binary), @p5='?' (Size = 4000), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Usuario] ([Id], [DataNascimento], [Descricao], [Email], [Imagem], [Nome], [Telefone])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2020-04-21 09:06:50.507 -03:00 [INF] Executed DbCommand (24ms) [Parameters=[@__request_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[DataNascimento], [u].[Descricao], [u].[Email], [u].[Imagem], [u].[Nome], [u].[Telefone]
+FROM [Usuario] AS [u]
+WHERE [u].[Id] = @__request_Id_0
+2020-04-21 09:06:50.523 -03:00 [INF] Executing ObjectResult, writing value of type 'Pets.Core.Query.Contracts.Usuario.Results.AdicionarUsuarioResult'.
+2020-04-21 09:06:50.533 -03:00 [INF] Executed action Pets.Core.Application.Controllers.UsuarioController.AdicionarUsuarioAsync (Pets.Core.Application) in 545.6462ms
+2020-04-21 09:06:50.537 -03:00 [INF] Executed endpoint 'Pets.Core.Application.Controllers.UsuarioController.AdicionarUsuarioAsync (Pets.Core.Application)'
+2020-04-21 09:06:50.542 -03:00 [INF] Request finished in 572.5471ms 200 application/json; charset=utf-8
+2020-04-21 09:06:57.483 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Usuario/find  
+2020-04-21 09:06:57.487 -03:00 [INF] Executing endpoint 'Pets.Core.Application.Controllers.UsuarioController.FindAsync (Pets.Core.Application)'
+2020-04-21 09:06:57.493 -03:00 [INF] Route matched with {action = "Find", controller = "Usuario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FindAsync(Pets.Core.Query.Usuario.Requests.FindUsuarioRequest) on controller Pets.Core.Application.Controllers.UsuarioController (Pets.Core.Application).
+2020-04-21 09:06:57.509 -03:00 [INF] Entity Framework Core 3.1.3 initialized 'PetsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-04-21 09:06:57.527 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Nome], [u].[Email], [u].[Telefone], [u].[DataNascimento], [u].[Descricao], NULL AS [Imagem]
+FROM [Usuario] AS [u]
+2020-04-21 09:06:57.534 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Pets.Core.Query.Contracts.Usuario.Results.FindUsuarioResult, Pets.Core.Query.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-21 09:06:57.538 -03:00 [INF] Executed action Pets.Core.Application.Controllers.UsuarioController.FindAsync (Pets.Core.Application) in 37.7591ms
+2020-04-21 09:06:57.540 -03:00 [INF] Executed endpoint 'Pets.Core.Application.Controllers.UsuarioController.FindAsync (Pets.Core.Application)'
+2020-04-21 09:06:57.542 -03:00 [INF] Request finished in 59.3454ms 200 application/json; charset=utf-8
+2020-04-21 09:07:02.155 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Usuario/find?Termo=Gle  
+2020-04-21 09:07:02.158 -03:00 [INF] Executing endpoint 'Pets.Core.Application.Controllers.UsuarioController.FindAsync (Pets.Core.Application)'
+2020-04-21 09:07:02.162 -03:00 [INF] Route matched with {action = "Find", controller = "Usuario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FindAsync(Pets.Core.Query.Usuario.Requests.FindUsuarioRequest) on controller Pets.Core.Application.Controllers.UsuarioController (Pets.Core.Application).
+2020-04-21 09:07:02.179 -03:00 [INF] Entity Framework Core 3.1.3 initialized 'PetsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-04-21 09:07:02.253 -03:00 [INF] Executed DbCommand (39ms) [Parameters=[@__request_Termo_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Nome], [u].[Email], [u].[Telefone], [u].[DataNascimento], [u].[Descricao], NULL AS [Imagem]
+FROM [Usuario] AS [u]
+WHERE (((@__request_Termo_0 = N'') OR (CHARINDEX(@__request_Termo_0, [u].[Nome]) > 0)) OR ((@__request_Termo_0 = N'') OR (CHARINDEX(@__request_Termo_0, [u].[Email]) > 0))) OR ((@__request_Termo_0 = N'') OR (CHARINDEX(@__request_Termo_0, [u].[Telefone]) > 0))
+2020-04-21 09:07:02.258 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Pets.Core.Query.Contracts.Usuario.Results.FindUsuarioResult, Pets.Core.Query.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-21 09:07:02.261 -03:00 [INF] Executed action Pets.Core.Application.Controllers.UsuarioController.FindAsync (Pets.Core.Application) in 89.1965ms
+2020-04-21 09:07:02.264 -03:00 [INF] Executed endpoint 'Pets.Core.Application.Controllers.UsuarioController.FindAsync (Pets.Core.Application)'
+2020-04-21 09:07:02.267 -03:00 [INF] Request finished in 111.5366ms 200 application/json; charset=utf-8
+2020-04-21 09:07:05.645 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Usuario/find?Termo=Ga  
+2020-04-21 09:07:05.647 -03:00 [INF] Executing endpoint 'Pets.Core.Application.Controllers.UsuarioController.FindAsync (Pets.Core.Application)'
+2020-04-21 09:07:05.651 -03:00 [INF] Route matched with {action = "Find", controller = "Usuario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FindAsync(Pets.Core.Query.Usuario.Requests.FindUsuarioRequest) on controller Pets.Core.Application.Controllers.UsuarioController (Pets.Core.Application).
+2020-04-21 09:07:05.663 -03:00 [INF] Entity Framework Core 3.1.3 initialized 'PetsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-04-21 09:07:05.673 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__request_Termo_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Nome], [u].[Email], [u].[Telefone], [u].[DataNascimento], [u].[Descricao], NULL AS [Imagem]
+FROM [Usuario] AS [u]
+WHERE (((@__request_Termo_0 = N'') OR (CHARINDEX(@__request_Termo_0, [u].[Nome]) > 0)) OR ((@__request_Termo_0 = N'') OR (CHARINDEX(@__request_Termo_0, [u].[Email]) > 0))) OR ((@__request_Termo_0 = N'') OR (CHARINDEX(@__request_Termo_0, [u].[Telefone]) > 0))
+2020-04-21 09:07:05.679 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Pets.Core.Query.Contracts.Usuario.Results.FindUsuarioResult, Pets.Core.Query.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-21 09:07:05.682 -03:00 [INF] Executed action Pets.Core.Application.Controllers.UsuarioController.FindAsync (Pets.Core.Application) in 22.1049ms
+2020-04-21 09:07:05.690 -03:00 [INF] Executed endpoint 'Pets.Core.Application.Controllers.UsuarioController.FindAsync (Pets.Core.Application)'
+2020-04-21 09:07:05.694 -03:00 [INF] Request finished in 49.0969ms 200 application/json; charset=utf-8
+2020-04-21 09:07:12.773 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Usuario/find  
+2020-04-21 09:07:12.777 -03:00 [INF] Executing endpoint 'Pets.Core.Application.Controllers.UsuarioController.FindAsync (Pets.Core.Application)'
+2020-04-21 09:07:12.781 -03:00 [INF] Route matched with {action = "Find", controller = "Usuario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FindAsync(Pets.Core.Query.Usuario.Requests.FindUsuarioRequest) on controller Pets.Core.Application.Controllers.UsuarioController (Pets.Core.Application).
+2020-04-21 09:07:12.789 -03:00 [INF] Entity Framework Core 3.1.3 initialized 'PetsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-04-21 09:07:12.797 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Nome], [u].[Email], [u].[Telefone], [u].[DataNascimento], [u].[Descricao], NULL AS [Imagem]
+FROM [Usuario] AS [u]
+2020-04-21 09:07:12.803 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Pets.Core.Query.Contracts.Usuario.Results.FindUsuarioResult, Pets.Core.Query.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-21 09:07:12.806 -03:00 [INF] Executed action Pets.Core.Application.Controllers.UsuarioController.FindAsync (Pets.Core.Application) in 19.2947ms
+2020-04-21 09:07:12.809 -03:00 [INF] Executed endpoint 'Pets.Core.Application.Controllers.UsuarioController.FindAsync (Pets.Core.Application)'
+2020-04-21 09:07:12.814 -03:00 [INF] Request finished in 41.2759ms 200 application/json; charset=utf-8
+2020-04-21 09:51:22.144 -03:00 [INF] Starting Amplifier web host
+2020-04-21 09:51:26.199 -03:00 [INF] User profile is available. Using 'C:\Users\gleison.ribeiro\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-04-21 09:51:31.456 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html  
+2020-04-21 09:51:31.545 -03:00 [INF] Request finished in 91.2199ms 200 text/html;charset=utf-8
+2020-04-21 09:51:31.865 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-04-21 09:51:31.882 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-32x32.png  
+2020-04-21 09:51:31.939 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2020-04-21 09:51:31.941 -03:00 [INF] Request finished in 58.9301ms 200 image/png
+2020-04-21 09:51:32.001 -03:00 [INF] Request finished in 135.797ms 200 application/json;charset=utf-8
+2020-04-21 09:51:39.063 -03:00 [INF] Request starting HTTP/1.1 HEAD https://localhost:5001/  
+2020-04-21 09:51:39.096 -03:00 [INF] Request finished in 33.5758ms 404 
+2020-04-21 09:53:02.752 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Usuario/find  
+2020-04-21 09:53:02.763 -03:00 [INF] Executing endpoint 'Pets.Core.Application.Controllers.UsuarioController.FindAsync (Pets.Core.Application)'
+2020-04-21 09:53:02.856 -03:00 [INF] Route matched with {action = "Find", controller = "Usuario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FindAsync(Pets.Core.Query.Usuario.Requests.FindUsuarioRequest) on controller Pets.Core.Application.Controllers.UsuarioController (Pets.Core.Application).
+2020-04-21 09:53:10.916 -03:00 [INF] Entity Framework Core 3.1.3 initialized 'PetsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-04-21 09:53:11.703 -03:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Nome], [u].[Email], [u].[Telefone], [u].[DataNascimento], [u].[Descricao], NULL AS [Imagem]
+FROM [Usuario] AS [u]
+2020-04-21 09:53:11.756 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Pets.Core.Query.Contracts.Usuario.Results.FindUsuarioResult, Pets.Core.Query.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-21 09:53:11.973 -03:00 [INF] Executed action Pets.Core.Application.Controllers.UsuarioController.FindAsync (Pets.Core.Application) in 9108.9877ms
+2020-04-21 09:53:11.978 -03:00 [INF] Executed endpoint 'Pets.Core.Application.Controllers.UsuarioController.FindAsync (Pets.Core.Application)'
+2020-04-21 09:53:11.984 -03:00 [INF] Request finished in 9231.5876ms 200 application/json; charset=utf-8
+2020-04-21 09:53:28.965 -03:00 [INF] Request starting HTTP/1.1 HEAD https://localhost:5001/  
+2020-04-21 09:53:28.969 -03:00 [INF] Request finished in 4.0067ms 404 
+2020-04-21 09:54:26.928 -03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Pet/adicionar application/json-patch+json 180
+2020-04-21 09:54:26.934 -03:00 [INF] Executing endpoint 'Pets.Core.Application.Controllers.PetController.AdicionarAsync (Pets.Core.Application)'
+2020-04-21 09:54:26.943 -03:00 [INF] Route matched with {action = "Adicionar", controller = "Pet"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdicionarAsync(Pets.Core.Query.Pet.Requests.AdicionarPetRequest) on controller Pets.Core.Application.Controllers.PetController (Pets.Core.Application).
+2020-04-21 09:54:27.040 -03:00 [INF] Entity Framework Core 3.1.3 initialized 'PetsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-04-21 09:54:27.583 -03:00 [ERR] Failed executing DbCommand (381ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Pet] ([Id], [DataNascimento], [Descricao], [Especie], [Nome], [Raca], [Sexo], [UsuarioId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2020-04-21 09:54:27.948 -03:00 [ERR] An exception occurred in the database while saving changes for context type 'Pets.Core.Query.Context.PetsDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Dados de cadeia ou binários seriam truncados.
+A instrução foi finalizada.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:2f64bd2b-678a-4396-91d2-030e68016d44
+Error Number:8152,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Dados de cadeia ou binários seriam truncados.
+A instrução foi finalizada.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:2f64bd2b-678a-4396-91d2-030e68016d44
+Error Number:8152,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2020-04-21 09:54:28.575 -03:00 [INF] Executed action Pets.Core.Application.Controllers.PetController.AdicionarAsync (Pets.Core.Application) in 1627.1687ms
+2020-04-21 09:54:28.612 -03:00 [INF] Executed endpoint 'Pets.Core.Application.Controllers.PetController.AdicionarAsync (Pets.Core.Application)'
+2020-04-21 09:54:28.718 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Dados de cadeia ou binários seriam truncados.
+A instrução foi finalizada.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:2f64bd2b-678a-4396-91d2-030e68016d44
+Error Number:8152,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at Pets.Core.Query.Pet.Handlers.PetCommandHandler.Handle(AdicionarPetRequest request, CancellationToken cancellationToken) in C:\Users\gleison.ribeiro\source\repos\Pets.Core.Query\Pet\Handlers\PetCommandHandler.cs:line 33
+   at MediatR.Internal.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at Pets.Core.Application.Controllers.PetController.AdicionarAsync(AdicionarPetRequest request) in C:\Users\gleison.ribeiro\source\repos\Pets.Core.Application\Controllers\PetController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-04-21 09:54:28.853 -03:00 [INF] Request finished in 1925.8982ms 500 text/plain
+2020-04-21 09:55:45.782 -03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Pet/adicionar application/json-patch+json 180
+2020-04-21 09:55:45.787 -03:00 [INF] Executing endpoint 'Pets.Core.Application.Controllers.PetController.AdicionarAsync (Pets.Core.Application)'
+2020-04-21 09:55:45.791 -03:00 [INF] Route matched with {action = "Adicionar", controller = "Pet"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdicionarAsync(Pets.Core.Query.Pet.Requests.AdicionarPetRequest) on controller Pets.Core.Application.Controllers.PetController (Pets.Core.Application).
+2020-04-21 09:56:38.671 -03:00 [INF] Entity Framework Core 3.1.3 initialized 'PetsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-04-21 09:56:52.399 -03:00 [ERR] Failed executing DbCommand (191ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Pet] ([Id], [DataNascimento], [Descricao], [Especie], [Nome], [Raca], [Sexo], [UsuarioId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2020-04-21 09:56:52.600 -03:00 [ERR] An exception occurred in the database while saving changes for context type 'Pets.Core.Query.Context.PetsDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Dados de cadeia ou binários seriam truncados.
+A instrução foi finalizada.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:2f64bd2b-678a-4396-91d2-030e68016d44
+Error Number:8152,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Dados de cadeia ou binários seriam truncados.
+A instrução foi finalizada.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:2f64bd2b-678a-4396-91d2-030e68016d44
+Error Number:8152,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2020-04-21 09:58:30.126 -03:00 [INF] Starting Amplifier web host
+2020-04-21 09:58:31.494 -03:00 [INF] User profile is available. Using 'C:\Users\gleison.ribeiro\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-04-21 09:58:47.579 -03:00 [INF] Request starting HTTP/1.1 HEAD https://localhost:5001/  
+2020-04-21 09:58:47.634 -03:00 [INF] Request finished in 57.2351ms 404 
+2020-04-21 09:59:37.699 -03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Pet/adicionar application/json-patch+json 180
+2020-04-21 09:59:37.714 -03:00 [INF] Executing endpoint 'Pets.Core.Application.Controllers.PetController.AdicionarAsync (Pets.Core.Application)'
+2020-04-21 09:59:37.769 -03:00 [INF] Route matched with {action = "Adicionar", controller = "Pet"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdicionarAsync(Pets.Core.Query.Pet.Requests.AdicionarPetRequest) on controller Pets.Core.Application.Controllers.PetController (Pets.Core.Application).
+2020-04-21 09:59:38.445 -03:00 [INF] Entity Framework Core 3.1.3 initialized 'PetsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-04-21 09:59:39.192 -03:00 [ERR] Failed executing DbCommand (297ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Pet] ([Id], [DataNascimento], [Descricao], [Especie], [Nome], [Raca], [Sexo], [UsuarioId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2020-04-21 09:59:39.444 -03:00 [ERR] An exception occurred in the database while saving changes for context type 'Pets.Core.Query.Context.PetsDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Dados de cadeia ou binários seriam truncados.
+A instrução foi finalizada.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:95493ef5-8083-42e7-b9f3-874166dfded1
+Error Number:8152,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Dados de cadeia ou binários seriam truncados.
+A instrução foi finalizada.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:95493ef5-8083-42e7-b9f3-874166dfded1
+Error Number:8152,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2020-04-21 09:59:40.043 -03:00 [INF] Executed action Pets.Core.Application.Controllers.PetController.AdicionarAsync (Pets.Core.Application) in 2265.757ms
+2020-04-21 09:59:40.080 -03:00 [INF] Executed endpoint 'Pets.Core.Application.Controllers.PetController.AdicionarAsync (Pets.Core.Application)'
+2020-04-21 09:59:40.183 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Dados de cadeia ou binários seriam truncados.
+A instrução foi finalizada.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:95493ef5-8083-42e7-b9f3-874166dfded1
+Error Number:8152,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at Pets.Core.Query.Pet.Handlers.PetCommandHandler.Handle(AdicionarPetRequest request, CancellationToken cancellationToken) in C:\Users\gleison.ribeiro\source\repos\Pets.Core.Query\Pet\Handlers\PetCommandHandler.cs:line 33
+   at MediatR.Internal.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at Pets.Core.Application.Controllers.PetController.AdicionarAsync(AdicionarPetRequest request) in C:\Users\gleison.ribeiro\source\repos\Pets.Core.Application\Controllers\PetController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-04-21 09:59:40.273 -03:00 [INF] Request finished in 2573.7604ms 500 text/plain
+2020-04-21 10:02:18.775 -03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Pet/adicionar application/json-patch+json 180
+2020-04-21 10:02:18.780 -03:00 [INF] Executing endpoint 'Pets.Core.Application.Controllers.PetController.AdicionarAsync (Pets.Core.Application)'
+2020-04-21 10:02:18.783 -03:00 [INF] Route matched with {action = "Adicionar", controller = "Pet"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdicionarAsync(Pets.Core.Query.Pet.Requests.AdicionarPetRequest) on controller Pets.Core.Application.Controllers.PetController (Pets.Core.Application).
+2020-04-21 10:02:18.817 -03:00 [INF] Entity Framework Core 3.1.3 initialized 'PetsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-04-21 10:02:19.025 -03:00 [ERR] Failed executing DbCommand (197ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Pet] ([Id], [DataNascimento], [Descricao], [Especie], [Nome], [Raca], [Sexo], [UsuarioId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2020-04-21 10:02:19.223 -03:00 [ERR] An exception occurred in the database while saving changes for context type 'Pets.Core.Query.Context.PetsDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Dados de cadeia ou binários seriam truncados.
+A instrução foi finalizada.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:95493ef5-8083-42e7-b9f3-874166dfded1
+Error Number:8152,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Dados de cadeia ou binários seriam truncados.
+A instrução foi finalizada.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:95493ef5-8083-42e7-b9f3-874166dfded1
+Error Number:8152,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2020-04-21 10:02:19.857 -03:00 [INF] Executed action Pets.Core.Application.Controllers.PetController.AdicionarAsync (Pets.Core.Application) in 1069.4654ms
+2020-04-21 10:02:19.890 -03:00 [INF] Executed endpoint 'Pets.Core.Application.Controllers.PetController.AdicionarAsync (Pets.Core.Application)'
+2020-04-21 10:02:19.988 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Dados de cadeia ou binários seriam truncados.
+A instrução foi finalizada.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:95493ef5-8083-42e7-b9f3-874166dfded1
+Error Number:8152,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at Pets.Core.Query.Pet.Handlers.PetCommandHandler.Handle(AdicionarPetRequest request, CancellationToken cancellationToken) in C:\Users\gleison.ribeiro\source\repos\Pets.Core.Query\Pet\Handlers\PetCommandHandler.cs:line 33
+   at MediatR.Internal.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at Pets.Core.Application.Controllers.PetController.AdicionarAsync(AdicionarPetRequest request) in C:\Users\gleison.ribeiro\source\repos\Pets.Core.Application\Controllers\PetController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-04-21 10:02:20.041 -03:00 [INF] Request finished in 1265.6744ms 500 text/plain
+2020-04-21 10:02:22.482 -03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Pet/adicionar application/json-patch+json 180
+2020-04-21 10:02:22.485 -03:00 [INF] Executing endpoint 'Pets.Core.Application.Controllers.PetController.AdicionarAsync (Pets.Core.Application)'
+2020-04-21 10:02:22.488 -03:00 [INF] Route matched with {action = "Adicionar", controller = "Pet"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdicionarAsync(Pets.Core.Query.Pet.Requests.AdicionarPetRequest) on controller Pets.Core.Application.Controllers.PetController (Pets.Core.Application).
+2020-04-21 10:02:22.503 -03:00 [INF] Entity Framework Core 3.1.3 initialized 'PetsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-04-21 10:02:22.703 -03:00 [ERR] Failed executing DbCommand (184ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Pet] ([Id], [DataNascimento], [Descricao], [Especie], [Nome], [Raca], [Sexo], [UsuarioId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2020-04-21 10:02:22.901 -03:00 [ERR] An exception occurred in the database while saving changes for context type 'Pets.Core.Query.Context.PetsDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Dados de cadeia ou binários seriam truncados.
+A instrução foi finalizada.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:95493ef5-8083-42e7-b9f3-874166dfded1
+Error Number:8152,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Dados de cadeia ou binários seriam truncados.
+A instrução foi finalizada.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:95493ef5-8083-42e7-b9f3-874166dfded1
+Error Number:8152,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2020-04-21 10:02:23.473 -03:00 [INF] Executed action Pets.Core.Application.Controllers.PetController.AdicionarAsync (Pets.Core.Application) in 979.5609ms
+2020-04-21 10:02:23.505 -03:00 [INF] Executed endpoint 'Pets.Core.Application.Controllers.PetController.AdicionarAsync (Pets.Core.Application)'
+2020-04-21 10:02:23.608 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Dados de cadeia ou binários seriam truncados.
+A instrução foi finalizada.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:95493ef5-8083-42e7-b9f3-874166dfded1
+Error Number:8152,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at Pets.Core.Query.Pet.Handlers.PetCommandHandler.Handle(AdicionarPetRequest request, CancellationToken cancellationToken) in C:\Users\gleison.ribeiro\source\repos\Pets.Core.Query\Pet\Handlers\PetCommandHandler.cs:line 33
+   at MediatR.Internal.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at Pets.Core.Application.Controllers.PetController.AdicionarAsync(AdicionarPetRequest request) in C:\Users\gleison.ribeiro\source\repos\Pets.Core.Application\Controllers\PetController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-04-21 10:02:23.687 -03:00 [INF] Request finished in 1205.3528ms 500 text/plain
+2020-04-21 10:03:55.042 -03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Pet/adicionar application/json-patch+json 180
+2020-04-21 10:03:55.047 -03:00 [INF] Executing endpoint 'Pets.Core.Application.Controllers.PetController.AdicionarAsync (Pets.Core.Application)'
+2020-04-21 10:03:55.053 -03:00 [INF] Route matched with {action = "Adicionar", controller = "Pet"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdicionarAsync(Pets.Core.Query.Pet.Requests.AdicionarPetRequest) on controller Pets.Core.Application.Controllers.PetController (Pets.Core.Application).
+2020-04-21 10:03:55.063 -03:00 [INF] Entity Framework Core 3.1.3 initialized 'PetsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-04-21 10:03:55.081 -03:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Pet] ([Id], [DataNascimento], [Descricao], [Especie], [Nome], [Raca], [Sexo], [UsuarioId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2020-04-21 10:03:55.351 -03:00 [INF] Executed DbCommand (35ms) [Parameters=[@__request_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [p].[Id], [p].[DataNascimento], [p].[Descricao], [p].[Especie], [p].[Nome], [p].[Raca], [p].[Sexo], [p].[UsuarioId]
+FROM [Pet] AS [p]
+WHERE [p].[Id] = @__request_Id_0
+2020-04-21 10:03:55.385 -03:00 [INF] Executing ObjectResult, writing value of type 'Pets.Core.Query.Contracts.Pet.Results.AdicionarPetResult'.
+2020-04-21 10:03:55.424 -03:00 [INF] Executed action Pets.Core.Application.Controllers.PetController.AdicionarAsync (Pets.Core.Application) in 365.6504ms
+2020-04-21 10:03:55.429 -03:00 [INF] Executed endpoint 'Pets.Core.Application.Controllers.PetController.AdicionarAsync (Pets.Core.Application)'
+2020-04-21 10:03:55.431 -03:00 [INF] Request finished in 389.4929ms 200 application/json; charset=utf-8
+2020-04-21 10:48:49.589 -03:00 [INF] Starting Amplifier web host
+2020-04-21 10:48:53.781 -03:00 [INF] User profile is available. Using 'C:\Users\gleison.ribeiro\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-04-21 10:48:58.247 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html  
+2020-04-21 10:48:58.342 -03:00 [INF] Request finished in 97.6237ms 200 text/html;charset=utf-8
+2020-04-21 10:48:58.596 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-04-21 10:48:58.618 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-32x32.png  
+2020-04-21 10:48:58.673 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2020-04-21 10:48:58.676 -03:00 [INF] Request finished in 58.1154ms 200 image/png
+2020-04-21 10:48:58.733 -03:00 [INF] Request finished in 137.2397ms 200 application/json;charset=utf-8
+2020-04-21 10:49:06.194 -03:00 [INF] Request starting HTTP/1.1 HEAD https://localhost:5001/  
+2020-04-21 10:49:06.222 -03:00 [INF] Request finished in 28.3266ms 404 
+2020-04-21 10:49:40.467 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Pet/find  
+2020-04-21 10:49:40.473 -03:00 [INF] Executing endpoint 'Pets.Core.Application.Controllers.PetController.FindAsync (Pets.Core.Application)'
+2020-04-21 10:49:40.532 -03:00 [INF] Route matched with {action = "Find", controller = "Pet"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FindAsync(Pets.Core.Query.Pet.Requests.FindPetRequest) on controller Pets.Core.Application.Controllers.PetController (Pets.Core.Application).
+2020-04-21 10:49:41.390 -03:00 [INF] Entity Framework Core 3.1.3 initialized 'PetsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-04-21 10:49:41.989 -03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Nome], [p].[Especie], [p].[Raca], [p].[Sexo], [p].[UsuarioId], [p].[DataNascimento], [p].[Descricao], NULL AS [Imagem]
+FROM [Pet] AS [p]
+2020-04-21 10:49:42.038 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Pets.Core.Query.Contracts.Pet.Results.FindPetResult, Pets.Core.Query.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-21 10:49:42.195 -03:00 [INF] Executed action Pets.Core.Application.Controllers.PetController.FindAsync (Pets.Core.Application) in 1653.7349ms
+2020-04-21 10:49:42.198 -03:00 [INF] Executed endpoint 'Pets.Core.Application.Controllers.PetController.FindAsync (Pets.Core.Application)'
+2020-04-21 10:49:42.203 -03:00 [INF] Request finished in 1736.2724ms 200 application/json; charset=utf-8
+2020-04-21 10:50:09.663 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Usuario/find  
+2020-04-21 10:50:09.666 -03:00 [INF] Executing endpoint 'Pets.Core.Application.Controllers.UsuarioController.FindAsync (Pets.Core.Application)'
+2020-04-21 10:50:09.676 -03:00 [INF] Route matched with {action = "Find", controller = "Usuario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FindAsync(Pets.Core.Query.Usuario.Requests.FindUsuarioRequest) on controller Pets.Core.Application.Controllers.UsuarioController (Pets.Core.Application).
+2020-04-21 10:50:09.711 -03:00 [INF] Entity Framework Core 3.1.3 initialized 'PetsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-04-21 10:50:09.729 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Nome], [u].[Email], [u].[Telefone], [u].[DataNascimento], [u].[Descricao], NULL AS [Imagem]
+FROM [Usuario] AS [u]
+2020-04-21 10:50:09.739 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Pets.Core.Query.Contracts.Usuario.Results.FindUsuarioResult, Pets.Core.Query.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-21 10:50:09.747 -03:00 [INF] Executed action Pets.Core.Application.Controllers.UsuarioController.FindAsync (Pets.Core.Application) in 67.1276ms
+2020-04-21 10:50:09.751 -03:00 [INF] Executed endpoint 'Pets.Core.Application.Controllers.UsuarioController.FindAsync (Pets.Core.Application)'
+2020-04-21 10:50:09.758 -03:00 [INF] Request finished in 95.5152ms 200 application/json; charset=utf-8
+2020-04-21 10:50:52.860 -03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Pet/adicionarimagem application/json-patch+json 155
+2020-04-21 10:50:52.865 -03:00 [INF] Executing endpoint 'Pets.Core.Application.Controllers.PetController.AdicionarPetImagem (Pets.Core.Application)'
+2020-04-21 10:50:52.873 -03:00 [INF] Route matched with {action = "AdicionarPetImagem", controller = "Pet"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdicionarPetImagem(Pets.Core.Query.Pet.Requests.AdicionarPetImagemRequest) on controller Pets.Core.Application.Controllers.PetController (Pets.Core.Application).
+2020-04-21 10:50:52.930 -03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Pet/adicionarimagem application/json-patch+json 155
+2020-04-21 10:50:52.933 -03:00 [INF] Executing endpoint 'Pets.Core.Application.Controllers.PetController.AdicionarPetImagem (Pets.Core.Application)'
+2020-04-21 10:50:52.936 -03:00 [INF] Route matched with {action = "AdicionarPetImagem", controller = "Pet"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdicionarPetImagem(Pets.Core.Query.Pet.Requests.AdicionarPetImagemRequest) on controller Pets.Core.Application.Controllers.PetController (Pets.Core.Application).
+2020-04-21 10:50:52.955 -03:00 [INF] Entity Framework Core 3.1.3 initialized 'PetsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-04-21 10:50:52.955 -03:00 [INF] Entity Framework Core 3.1.3 initialized 'PetsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-04-21 10:50:53.182 -03:00 [INF] Executed DbCommand (64ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 8000) (DbType = Binary)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Imagem] ([Id], [Imagem])
+VALUES (@p0, @p1);
+2020-04-21 10:50:53.182 -03:00 [INF] Executed DbCommand (64ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 8000) (DbType = Binary)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Imagem] ([Id], [Imagem])
+VALUES (@p0, @p1);
+2020-04-21 10:50:53.189 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [PetImagem] ([PetId], [ImagemId], [CriadorId], [UsuarioMarcadoId])
+VALUES (@p0, @p1, @p2, @p3);
+2020-04-21 10:50:53.190 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [PetImagem] ([PetId], [ImagemId], [CriadorId], [UsuarioMarcadoId])
+VALUES (@p0, @p1, @p2, @p3);
+2020-04-21 10:50:53.251 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__request_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [i].[Id], [i].[Imagem]
+FROM [Imagem] AS [i]
+WHERE [i].[Id] = @__request_Id_0
+2020-04-21 10:50:53.258 -03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__request_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [i].[Id], [i].[Imagem]
+FROM [Imagem] AS [i]
+WHERE [i].[Id] = @__request_Id_0
+2020-04-21 10:50:53.264 -03:00 [INF] Executing ObjectResult, writing value of type 'Pets.Core.Query.Contracts.Pet.Results.AdicionarPetImagemResult'.
+2020-04-21 10:50:53.265 -03:00 [INF] Executing ObjectResult, writing value of type 'Pets.Core.Query.Contracts.Pet.Results.AdicionarPetImagemResult'.
+2020-04-21 10:50:53.271 -03:00 [INF] Executed action Pets.Core.Application.Controllers.PetController.AdicionarPetImagem (Pets.Core.Application) in 391.8515ms
+2020-04-21 10:50:53.277 -03:00 [INF] Executed action Pets.Core.Application.Controllers.PetController.AdicionarPetImagem (Pets.Core.Application) in 337.0907ms
+2020-04-21 10:50:53.280 -03:00 [INF] Executed endpoint 'Pets.Core.Application.Controllers.PetController.AdicionarPetImagem (Pets.Core.Application)'
+2020-04-21 10:50:53.284 -03:00 [INF] Executed endpoint 'Pets.Core.Application.Controllers.PetController.AdicionarPetImagem (Pets.Core.Application)'
+2020-04-21 10:50:53.287 -03:00 [INF] Request finished in 427.1563ms 200 application/json; charset=utf-8
+2020-04-21 10:50:53.289 -03:00 [INF] Request finished in 358.8042ms 200 application/json; charset=utf-8
+2020-04-21 10:52:19.947 -03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Pet/adicionarimagem application/json-patch+json 155
+2020-04-21 10:52:19.951 -03:00 [INF] Executing endpoint 'Pets.Core.Application.Controllers.PetController.AdicionarPetImagem (Pets.Core.Application)'
+2020-04-21 10:52:19.954 -03:00 [INF] Route matched with {action = "AdicionarPetImagem", controller = "Pet"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdicionarPetImagem(Pets.Core.Query.Pet.Requests.AdicionarPetImagemRequest) on controller Pets.Core.Application.Controllers.PetController (Pets.Core.Application).
+2020-04-21 10:52:35.726 -03:00 [INF] Entity Framework Core 3.1.3 initialized 'PetsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-04-21 10:52:47.419 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 8000) (DbType = Binary)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Imagem] ([Id], [Imagem])
+VALUES (@p0, @p1);
+2020-04-21 10:52:47.428 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [PetImagem] ([PetId], [ImagemId], [CriadorId], [UsuarioMarcadoId])
+VALUES (@p0, @p1, @p2, @p3);
+2020-04-21 10:52:49.145 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__request_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [i].[Id], [i].[Imagem]
+FROM [Imagem] AS [i]
+WHERE [i].[Id] = @__request_Id_0
+2020-04-21 10:52:51.461 -03:00 [INF] Executing ObjectResult, writing value of type 'Pets.Core.Query.Contracts.Pet.Results.AdicionarPetImagemResult'.
+2020-04-21 10:52:51.467 -03:00 [INF] Executed action Pets.Core.Application.Controllers.PetController.AdicionarPetImagem (Pets.Core.Application) in 31507.2289ms
+2020-04-21 10:52:51.471 -03:00 [INF] Executed endpoint 'Pets.Core.Application.Controllers.PetController.AdicionarPetImagem (Pets.Core.Application)'
+2020-04-21 10:52:51.476 -03:00 [INF] Request finished in 31528.97ms 200 application/json; charset=utf-8
+2020-04-21 10:53:10.481 -03:00 [INF] Request starting HTTP/1.1 HEAD https://localhost:5001/  
+2020-04-21 10:53:10.485 -03:00 [INF] Request finished in 3.1393ms 404 
+2020-04-21 12:07:56.259 -03:00 [INF] Starting Amplifier web host
+2020-04-21 12:08:00.376 -03:00 [INF] User profile is available. Using 'C:\Users\gleison.ribeiro\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-04-21 12:08:05.320 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html  
+2020-04-21 12:08:11.891 -03:00 [INF] Request starting HTTP/1.1 HEAD https://localhost:5001/  
+2020-04-21 12:08:37.215 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html  
+2020-04-21 12:08:06.862 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html  
+2020-04-21 12:08:07.323 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html  
+2020-04-21 12:08:32.693 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html  
+2020-04-21 12:08:44.222 -03:00 [INF] Request finished in 32329.3259ms 404 
+2020-04-21 12:08:44.237 -03:00 [INF] Request finished in 38920.088ms 200 text/html;charset=utf-8
+2020-04-21 12:08:44.237 -03:00 [INF] Request finished in 36914.4624ms 200 text/html;charset=utf-8
+2020-04-21 12:08:44.237 -03:00 [INF] Request finished in 11544.8183ms 200 text/html;charset=utf-8
+2020-04-21 12:08:44.237 -03:00 [INF] Request finished in 37375.5061ms 200 text/html;charset=utf-8
+2020-04-21 12:08:44.239 -03:00 [INF] Request finished in 7023.7521ms 200 text/html;charset=utf-8
+2020-04-21 12:08:44.447 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-04-21 12:08:44.579 -03:00 [INF] Request finished in 131.7056ms 200 application/json;charset=utf-8
+2020-04-21 12:09:22.903 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Usuario/find  
+2020-04-21 12:09:22.914 -03:00 [INF] Executing endpoint 'Pets.Core.Application.Controllers.UsuarioController.FindAsync (Pets.Core.Application)'
+2020-04-21 12:09:23.002 -03:00 [INF] Route matched with {action = "Find", controller = "Usuario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FindAsync(Pets.Core.Query.Usuario.Requests.FindUsuarioRequest) on controller Pets.Core.Application.Controllers.UsuarioController (Pets.Core.Application).
+2020-04-21 12:09:24.131 -03:00 [INF] Entity Framework Core 3.1.3 initialized 'PetsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-04-21 12:09:24.906 -03:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Nome], [u].[Email], [u].[Telefone], [u].[DataNascimento], [u].[Descricao], NULL AS [Imagem]
+FROM [Usuario] AS [u]
+2020-04-21 12:09:24.956 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Pets.Core.Query.Contracts.Usuario.Results.FindUsuarioResult, Pets.Core.Query.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-21 12:09:25.170 -03:00 [INF] Executed action Pets.Core.Application.Controllers.UsuarioController.FindAsync (Pets.Core.Application) in 2157.741ms
+2020-04-21 12:09:25.174 -03:00 [INF] Executed endpoint 'Pets.Core.Application.Controllers.UsuarioController.FindAsync (Pets.Core.Application)'
+2020-04-21 12:09:25.179 -03:00 [INF] Request finished in 2276.2332ms 200 application/json; charset=utf-8
+2020-04-21 12:09:54.259 -03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Amizade/solicitar application/json-patch+json 110
+2020-04-21 12:09:54.264 -03:00 [INF] Executing endpoint 'Pets.Core.Application.Controllers.AmizadeController.AdicionarAsync (Pets.Core.Application)'
+2020-04-21 12:09:54.273 -03:00 [INF] Route matched with {action = "Adicionar", controller = "Amizade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdicionarAsync(Pets.Core.Query.Amizade.Requests.SolicitarAmizadeRequest) on controller Pets.Core.Application.Controllers.AmizadeController (Pets.Core.Application).
+2020-04-21 12:09:54.358 -03:00 [INF] Entity Framework Core 3.1.3 initialized 'PetsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-04-21 12:09:54.626 -03:00 [INF] Executed DbCommand (101ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = DateTime2), @p2='?' (Size = 450), @p3='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [SolicitacaoAmizade] ([Id], [DataSolicitacao], [SolicitadoId], [SolicitanteId])
+VALUES (@p0, @p1, @p2, @p3);
+2020-04-21 12:09:54.685 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__request_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [s].[Id], [s].[DataSolicitacao], [s].[SolicitadoId], [s].[SolicitanteId]
+FROM [SolicitacaoAmizade] AS [s]
+WHERE [s].[Id] = @__request_Id_0
+2020-04-21 12:09:54.692 -03:00 [INF] Executing ObjectResult, writing value of type 'Pets.Core.Query.Contracts.Amizade.Results.SolicitarAmizadeResult'.
+2020-04-21 12:09:54.700 -03:00 [INF] Executed action Pets.Core.Application.Controllers.AmizadeController.AdicionarAsync (Pets.Core.Application) in 423.0366ms
+2020-04-21 12:09:54.706 -03:00 [INF] Executed endpoint 'Pets.Core.Application.Controllers.AmizadeController.AdicionarAsync (Pets.Core.Application)'
+2020-04-21 12:09:54.709 -03:00 [INF] Request finished in 450.7795ms 200 application/json; charset=utf-8
+2020-04-21 12:11:06.037 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Amizade/findsolicitacao?UsuarioId=a8d9ec8a-8778-4e44-a2dc-49f334e8258d  
+2020-04-21 12:11:06.043 -03:00 [INF] Executing endpoint 'Pets.Core.Application.Controllers.AmizadeController.FindAsync (Pets.Core.Application)'
+2020-04-21 12:11:06.050 -03:00 [INF] Route matched with {action = "Find", controller = "Amizade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FindAsync(Pets.Core.Query.Amizade.Requests.FindSolicitacaoRequest) on controller Pets.Core.Application.Controllers.AmizadeController (Pets.Core.Application).
+2020-04-21 12:11:06.068 -03:00 [INF] Entity Framework Core 3.1.3 initialized 'PetsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-04-21 12:11:06.116 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__request_UsuarioId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[DataSolicitacao], [u].[Id], [u].[DataNascimento], [u].[Descricao], [u].[Email], [u].[Imagem], [u].[Nome], [u].[Telefone], [u0].[Id], [u0].[DataNascimento], [u0].[Descricao], [u0].[Email], [u0].[Imagem], [u0].[Nome], [u0].[Telefone]
+FROM [SolicitacaoAmizade] AS [s]
+LEFT JOIN [Usuario] AS [u] ON [s].[SolicitadoId] = [u].[Id]
+LEFT JOIN [Usuario] AS [u0] ON [s].[SolicitanteId] = [u0].[Id]
+WHERE [s].[SolicitadoId] = @__request_UsuarioId_0
+2020-04-21 12:11:06.128 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Pets.Core.Query.Contracts.Amizade.Results.FindSolicitacaoResult, Pets.Core.Query.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-21 12:11:06.141 -03:00 [INF] Executed action Pets.Core.Application.Controllers.AmizadeController.FindAsync (Pets.Core.Application) in 87.1684ms
+2020-04-21 12:11:06.145 -03:00 [INF] Executed endpoint 'Pets.Core.Application.Controllers.AmizadeController.FindAsync (Pets.Core.Application)'
+2020-04-21 12:11:06.147 -03:00 [INF] Request finished in 110.1736ms 200 application/json; charset=utf-8
+2020-04-21 12:11:23.674 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Amizade/findsolicitacao?UsuarioId=b9e9fd9b-9225-5e44-a3dc-49f445e8258d  
+2020-04-21 12:11:23.679 -03:00 [INF] Executing endpoint 'Pets.Core.Application.Controllers.AmizadeController.FindAsync (Pets.Core.Application)'
+2020-04-21 12:11:23.682 -03:00 [INF] Route matched with {action = "Find", controller = "Amizade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FindAsync(Pets.Core.Query.Amizade.Requests.FindSolicitacaoRequest) on controller Pets.Core.Application.Controllers.AmizadeController (Pets.Core.Application).
+2020-04-21 12:11:23.689 -03:00 [INF] Entity Framework Core 3.1.3 initialized 'PetsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-04-21 12:11:23.701 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__request_UsuarioId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[DataSolicitacao], [u].[Id], [u].[DataNascimento], [u].[Descricao], [u].[Email], [u].[Imagem], [u].[Nome], [u].[Telefone], [u0].[Id], [u0].[DataNascimento], [u0].[Descricao], [u0].[Email], [u0].[Imagem], [u0].[Nome], [u0].[Telefone]
+FROM [SolicitacaoAmizade] AS [s]
+LEFT JOIN [Usuario] AS [u] ON [s].[SolicitadoId] = [u].[Id]
+LEFT JOIN [Usuario] AS [u0] ON [s].[SolicitanteId] = [u0].[Id]
+WHERE [s].[SolicitadoId] = @__request_UsuarioId_0
+2020-04-21 12:11:23.707 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Pets.Core.Query.Contracts.Amizade.Results.FindSolicitacaoResult, Pets.Core.Query.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-21 12:11:23.713 -03:00 [INF] Executed action Pets.Core.Application.Controllers.AmizadeController.FindAsync (Pets.Core.Application) in 26.2805ms
+2020-04-21 12:11:23.716 -03:00 [INF] Executed endpoint 'Pets.Core.Application.Controllers.AmizadeController.FindAsync (Pets.Core.Application)'
+2020-04-21 12:11:23.720 -03:00 [INF] Request finished in 45.9194ms 200 application/json; charset=utf-8
+2020-04-21 12:12:06.070 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Amizade/findsolicitacao?UsuarioId=a8d9ec8a-8778-4e44-a2dc-49f334e8258d  
+2020-04-21 12:12:06.073 -03:00 [INF] Executing endpoint 'Pets.Core.Application.Controllers.AmizadeController.FindAsync (Pets.Core.Application)'
+2020-04-21 12:12:06.076 -03:00 [INF] Route matched with {action = "Find", controller = "Amizade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FindAsync(Pets.Core.Query.Amizade.Requests.FindSolicitacaoRequest) on controller Pets.Core.Application.Controllers.AmizadeController (Pets.Core.Application).
+2020-04-21 12:12:06.084 -03:00 [INF] Entity Framework Core 3.1.3 initialized 'PetsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-04-21 12:12:06.096 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__request_UsuarioId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[DataSolicitacao], [u].[Id], [u].[DataNascimento], [u].[Descricao], [u].[Email], [u].[Imagem], [u].[Nome], [u].[Telefone], [u0].[Id], [u0].[DataNascimento], [u0].[Descricao], [u0].[Email], [u0].[Imagem], [u0].[Nome], [u0].[Telefone]
+FROM [SolicitacaoAmizade] AS [s]
+LEFT JOIN [Usuario] AS [u] ON [s].[SolicitadoId] = [u].[Id]
+LEFT JOIN [Usuario] AS [u0] ON [s].[SolicitanteId] = [u0].[Id]
+WHERE [s].[SolicitadoId] = @__request_UsuarioId_0
+2020-04-21 12:12:06.103 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Pets.Core.Query.Contracts.Amizade.Results.FindSolicitacaoResult, Pets.Core.Query.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-21 12:12:06.107 -03:00 [INF] Executed action Pets.Core.Application.Controllers.AmizadeController.FindAsync (Pets.Core.Application) in 27.4859ms
+2020-04-21 12:12:06.110 -03:00 [INF] Executed endpoint 'Pets.Core.Application.Controllers.AmizadeController.FindAsync (Pets.Core.Application)'
+2020-04-21 12:12:06.112 -03:00 [INF] Request finished in 41.9903ms 200 application/json; charset=utf-8
+2020-04-21 12:12:19.902 -03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Amizade/respondersolicitacao application/json-patch+json 74
+2020-04-21 12:12:19.904 -03:00 [INF] Executing endpoint 'Pets.Core.Application.Controllers.AmizadeController.AdicionarAsync (Pets.Core.Application)'
+2020-04-21 12:12:19.917 -03:00 [INF] Route matched with {action = "Adicionar", controller = "Amizade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdicionarAsync(Pets.Core.Query.Amizade.Requests.ResponderSolicitacaoRequest) on controller Pets.Core.Application.Controllers.AmizadeController (Pets.Core.Application).
+2020-04-21 12:12:19.943 -03:00 [INF] Entity Framework Core 3.1.3 initialized 'PetsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-04-21 12:12:19.955 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__request_SolicitacaoId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [s].[Id], [s].[DataSolicitacao], [s].[SolicitadoId], [s].[SolicitanteId]
+FROM [SolicitacaoAmizade] AS [s]
+WHERE [s].[Id] = @__request_SolicitacaoId_0
+2020-04-21 12:12:19.989 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [SolicitacaoAmizade]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2020-04-21 12:12:19.994 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [VinculoAmizade] ([SolicitanteId], [SolicitadoId], [DataConfirmacao], [DataSolicitacao])
+VALUES (@p0, @p1, @p2, @p3);
+2020-04-21 12:12:20.003 -03:00 [INF] Executing ObjectResult, writing value of type 'Pets.Core.Query.Contracts.Amizade.Results.ResponderSolicitacaoResult'.
+2020-04-21 12:12:20.007 -03:00 [INF] Executed action Pets.Core.Application.Controllers.AmizadeController.AdicionarAsync (Pets.Core.Application) in 84.2843ms
+2020-04-21 12:12:20.014 -03:00 [INF] Executed endpoint 'Pets.Core.Application.Controllers.AmizadeController.AdicionarAsync (Pets.Core.Application)'
+2020-04-21 12:12:20.016 -03:00 [INF] Request finished in 114.4196ms 200 application/json; charset=utf-8
+2020-04-21 12:35:18.688 -03:00 [INF] Starting Amplifier web host
+2020-04-21 12:35:20.478 -03:00 [INF] User profile is available. Using 'C:\Users\gleison.ribeiro\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-04-21 12:35:35.974 -03:00 [INF] Request starting HTTP/1.1 HEAD https://localhost:5001/  
+2020-04-21 12:35:36.033 -03:00 [INF] Request finished in 61.7167ms 404 
+2020-04-21 12:35:45.322 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html  
+2020-04-21 12:35:45.366 -03:00 [INF] Request finished in 44.2942ms 200 text/html;charset=utf-8
+2020-04-21 12:35:45.777 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-04-21 12:35:45.809 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-32x32.png  
+2020-04-21 12:35:45.896 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2020-04-21 12:35:45.901 -03:00 [INF] Request finished in 92.5108ms 200 image/png
+2020-04-21 12:35:46.006 -03:00 [INF] Request finished in 229.9356ms 200 application/json;charset=utf-8
+2020-04-21 12:37:00.508 -03:00 [INF] Starting Amplifier web host
+2020-04-21 12:37:02.173 -03:00 [INF] User profile is available. Using 'C:\Users\gleison.ribeiro\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-04-21 12:37:17.929 -03:00 [INF] Request starting HTTP/1.1 HEAD https://localhost:5001/  
+2020-04-21 12:37:17.986 -03:00 [INF] Request finished in 59.839ms 404 
+2020-04-21 12:37:22.633 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html  
+2020-04-21 12:37:22.666 -03:00 [INF] Request finished in 33.9818ms 200 text/html;charset=utf-8
+2020-04-21 12:37:22.975 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-32x32.png  
+2020-04-21 12:37:22.975 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-04-21 12:37:23.012 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2020-04-21 12:37:23.015 -03:00 [INF] Request finished in 39.5655ms 200 image/png
+2020-04-21 12:37:23.123 -03:00 [INF] Request finished in 147.9505ms 200 application/json;charset=utf-8
+2020-04-21 12:37:29.346 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Usuario/find  
+2020-04-21 12:37:29.353 -03:00 [INF] Executing endpoint 'Pets.Core.Application.Controllers.UsuarioController.FindAsync (Pets.Core.Application)'
+2020-04-21 12:37:29.415 -03:00 [INF] Route matched with {action = "Find", controller = "Usuario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FindAsync(Pets.Core.Query.Usuario.Requests.FindUsuarioRequest) on controller Pets.Core.Application.Controllers.UsuarioController (Pets.Core.Application).
+2020-04-21 12:37:30.183 -03:00 [INF] Entity Framework Core 3.1.3 initialized 'PetsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-04-21 12:37:30.663 -03:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Nome], [u].[Email], [u].[Telefone], [u].[DataNascimento], [u].[Descricao], NULL AS [Imagem]
+FROM [Usuario] AS [u]
+2020-04-21 12:37:30.713 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Pets.Core.Query.Contracts.Usuario.Results.FindUsuarioResult, Pets.Core.Query.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-21 12:37:30.836 -03:00 [INF] Executed action Pets.Core.Application.Controllers.UsuarioController.FindAsync (Pets.Core.Application) in 1408.6299ms
+2020-04-21 12:37:30.839 -03:00 [INF] Executed endpoint 'Pets.Core.Application.Controllers.UsuarioController.FindAsync (Pets.Core.Application)'
+2020-04-21 12:37:30.844 -03:00 [INF] Request finished in 1499.3647ms 200 application/json; charset=utf-8
+2020-04-21 12:37:40.874 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Amizade/find?UsuarioId=b9e9fd9b-9225-5e44-a3dc-49f445e8258d  
+2020-04-21 12:37:40.880 -03:00 [INF] Executing endpoint 'Pets.Core.Application.Controllers.AmizadeController.FindAsync (Pets.Core.Application)'
+2020-04-21 12:37:40.889 -03:00 [INF] Route matched with {action = "Find", controller = "Amizade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FindAsync(Pets.Core.Query.Amizade.Requests.FindAmizadeRequest) on controller Pets.Core.Application.Controllers.AmizadeController (Pets.Core.Application).
+2020-04-21 12:37:40.935 -03:00 [INF] Entity Framework Core 3.1.3 initialized 'PetsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-04-21 12:37:41.336 -03:00 [INF] Executed DbCommand (328ms) [Parameters=[@__request_UsuarioId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[DataNascimento], [u].[Descricao], [u].[Email], [u].[Imagem], [u].[Nome], [u].[Telefone]
+FROM [VinculoAmizade] AS [v]
+INNER JOIN [Usuario] AS [u] ON [v].[SolicitadoId] = [u].[Id]
+WHERE ([v].[SolicitadoId] = @__request_UsuarioId_0) OR ([v].[SolicitanteId] = @__request_UsuarioId_0)
+2020-04-21 12:37:41.417 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__request_UsuarioId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[DataNascimento], [u].[Descricao], [u].[Email], [u].[Imagem], [u].[Nome], [u].[Telefone]
+FROM [VinculoAmizade] AS [v]
+INNER JOIN [Usuario] AS [u] ON [v].[SolicitanteId] = [u].[Id]
+WHERE ([v].[SolicitadoId] = @__request_UsuarioId_0) OR ([v].[SolicitanteId] = @__request_UsuarioId_0)
+2020-04-21 12:37:41.424 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Pets.Core.Query.Contracts.Amizade.Results.FindAmizadeResult, Pets.Core.Query.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-21 12:37:41.434 -03:00 [INF] Executed action Pets.Core.Application.Controllers.AmizadeController.FindAsync (Pets.Core.Application) in 541.3472ms
+2020-04-21 12:37:41.439 -03:00 [INF] Executed endpoint 'Pets.Core.Application.Controllers.AmizadeController.FindAsync (Pets.Core.Application)'
+2020-04-21 12:37:41.441 -03:00 [INF] Request finished in 566.9296ms 200 application/json; charset=utf-8
+2020-04-21 14:17:31.649 -03:00 [INF] Starting Amplifier web host
+2020-04-21 14:17:36.637 -03:00 [INF] User profile is available. Using 'C:\Users\gleison.ribeiro\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-04-21 14:17:47.211 -03:00 [INF] Request starting HTTP/1.1 HEAD https://localhost:5001/  
+2020-04-21 14:17:47.312 -03:00 [INF] Request finished in 103.6281ms 404 
+2020-04-21 14:17:48.145 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html  
+2020-04-21 14:17:48.479 -03:00 [INF] Request finished in 334.7279ms 200 text/html;charset=utf-8
+2020-04-21 14:17:48.753 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-04-21 14:17:48.861 -03:00 [INF] Request finished in 108.073ms 200 application/json;charset=utf-8

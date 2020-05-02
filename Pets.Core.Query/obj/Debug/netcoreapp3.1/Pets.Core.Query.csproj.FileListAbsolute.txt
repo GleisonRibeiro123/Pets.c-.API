@@ -1,0 +1,12 @@
+C:\Users\gleison.ribeiro\source\repos\Pets.Core.Query\bin\Debug\netcoreapp3.1\Pets.Core.Query.deps.json
+C:\Users\gleison.ribeiro\source\repos\Pets.Core.Query\bin\Debug\netcoreapp3.1\Pets.Core.Query.dll
+C:\Users\gleison.ribeiro\source\repos\Pets.Core.Query\bin\Debug\netcoreapp3.1\Pets.Core.Query.pdb
+C:\Users\gleison.ribeiro\source\repos\Pets.Core.Query\bin\Debug\netcoreapp3.1\Pets.Core.Query.Contracts.dll
+C:\Users\gleison.ribeiro\source\repos\Pets.Core.Query\bin\Debug\netcoreapp3.1\Pets.Core.Query.Contracts.pdb
+C:\Users\gleison.ribeiro\source\repos\Pets.Core.Query\obj\Debug\netcoreapp3.1\Pets.Core.Query.csprojAssemblyReference.cache
+C:\Users\gleison.ribeiro\source\repos\Pets.Core.Query\obj\Debug\netcoreapp3.1\Pets.Core.Query.AssemblyInfoInputs.cache
+C:\Users\gleison.ribeiro\source\repos\Pets.Core.Query\obj\Debug\netcoreapp3.1\Pets.Core.Query.AssemblyInfo.cs
+C:\Users\gleison.ribeiro\source\repos\Pets.Core.Query\obj\Debug\netcoreapp3.1\Pets.Core.Query.csproj.CopyComplete
+C:\Users\gleison.ribeiro\source\repos\Pets.Core.Query\obj\Debug\netcoreapp3.1\Pets.Core.Query.dll
+C:\Users\gleison.ribeiro\source\repos\Pets.Core.Query\obj\Debug\netcoreapp3.1\Pets.Core.Query.pdb
+C:\Users\gleison.ribeiro\source\repos\Pets.Core.Query\obj\Debug\netcoreapp3.1\Pets.Core.Query.csproj.CoreCompileInputs.cache

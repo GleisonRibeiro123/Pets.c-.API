@@ -1,0 +1,9 @@
+C:\Users\gleison.ribeiro\source\repos\Pets.Core.Query.Contracts\bin\Debug\netcoreapp3.1\Pets.Core.Query.Contracts.deps.json
+C:\Users\gleison.ribeiro\source\repos\Pets.Core.Query.Contracts\bin\Debug\netcoreapp3.1\Pets.Core.Query.Contracts.dll
+C:\Users\gleison.ribeiro\source\repos\Pets.Core.Query.Contracts\bin\Debug\netcoreapp3.1\Pets.Core.Query.Contracts.pdb
+C:\Users\gleison.ribeiro\source\repos\Pets.Core.Query.Contracts\obj\Debug\netcoreapp3.1\Pets.Core.Query.Contracts.csprojAssemblyReference.cache
+C:\Users\gleison.ribeiro\source\repos\Pets.Core.Query.Contracts\obj\Debug\netcoreapp3.1\Pets.Core.Query.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\gleison.ribeiro\source\repos\Pets.Core.Query.Contracts\obj\Debug\netcoreapp3.1\Pets.Core.Query.Contracts.AssemblyInfoInputs.cache
+C:\Users\gleison.ribeiro\source\repos\Pets.Core.Query.Contracts\obj\Debug\netcoreapp3.1\Pets.Core.Query.Contracts.AssemblyInfo.cs
+C:\Users\gleison.ribeiro\source\repos\Pets.Core.Query.Contracts\obj\Debug\netcoreapp3.1\Pets.Core.Query.Contracts.dll
+C:\Users\gleison.ribeiro\source\repos\Pets.Core.Query.Contracts\obj\Debug\netcoreapp3.1\Pets.Core.Query.Contracts.pdb
